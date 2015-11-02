@@ -129,9 +129,10 @@
 </li>
 </ul>
 </li>
-<li>Set the onClickListeners of the buttons
+<li>Make the buttons clickable
 
 <ul>
+<li>Use an onClickListeners</li>
 <li>Use the methode <code>checkIfRightAnswered(String string)</code>
 </li>
 <li>This string should be the text of the button</li>
@@ -177,7 +178,33 @@
 <a id="part-4-difficult" class="anchor" href="#part-4-difficult" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 4 (Difficult)</h4>
 
 <ul>
-<li>Set the onWinListener</li>
+<li>
+<p>Set the text shown when the player wins or loses</p>
+
+<ul>
+<li>
+<p>Set the onWinListener</p>
+
+<ul>
+<li>
+<p>Use the following code: ``` game.setOnWinListener(new onWinOrLoseInterface() {
+    <a href="https://github.com/Override" class="user-mention">@Override</a>
+    public void onWin() {
+        Toast.makeText(getApplicationContext(), "Next Level.", Toast.LENGTH_SHORT).show();
+    }</p>
+
+<pre><code>@Override
+public void onLose() {
+    Toast.makeText(getApplicationContext(), "You have lost.", Toast.LENGTH_LONG).show();
+}
+</code></pre>
+
+<p>});```</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Make sure the game doesn't restart on turn (onConfigCHanged ...)</li>
 <li>Add a TextView in the layout that shows the level</li>
 </ul>
