@@ -98,10 +98,11 @@
 <li><code>Game game = new Game(this);</code></li>
 </ul>
 </li>
-<li>Add all pointsButtons to the game (id's are buttonPoints0..9)
+<li>Add all pointsButtons to the game
 
 <ul>
-<li>Use findViewById() to get the reference to the 10 buttons</li>
+<li>The id's of the pointsButtons are buttonPoints0..9</li>
+<li>Use <code>findViewById()</code> to get the reference to the 10 buttons</li>
 <li>Use the methode <code>addPointsButton(Button button)</code>
 </li>
 </ul>
@@ -109,7 +110,7 @@
 <li>Set the AnswerButtons to the game
 
 <ul>
-<li>Use findViewById() to get the reference to the 10 buttons</li>
+<li>Use <code>findViewById()</code> to get the reference to the 10 buttons</li>
 <li>Use the methode <code>setAnswerButtons(Button button)</code>
 </li>
 </ul>
@@ -135,9 +136,15 @@
 </li>
 <li>This string should be the text of the button</li>
 <li>Use the methode <code>button.getText().toString()</code>
-#### Part 3</li>
+</li>
 </ul>
 </li>
+</ul>
+
+<h4>
+<a id="part-3" class="anchor" href="#part-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 3</h4>
+
+<ul>
 <li>Add a landscape layout for activity_game (buttons alongside each other instead of on top)</li>
 <li>Add a menu with different layout for portait and landscape modus</li>
 <li>When clicked on 1 of the menu-items, the game should restart. (game.restart())</li>
