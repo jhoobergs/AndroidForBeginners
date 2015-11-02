@@ -194,18 +194,31 @@
 <div class="highlight highlight-source-java"><pre>            game<span class="pl-k">.</span>setOnWinListener(<span class="pl-k">new</span> onWinOrLoseInterface() {
             <span class="pl-k">@Override</span>
             <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onWin</span>() {
-                <span class="pl-smi">Toast</span><span class="pl-k">.</span>makeText(getApplicationContext(), <span class="pl-s"><span class="pl-pds">"</span>Next Level.<span class="pl-pds">"</span></span>, <span class="pl-smi">Toast</span><span class="pl-c1"><span class="pl-k">.</span>LENGTH_SHORT</span>)<span class="pl-k">.</span>show();
+                <span class="pl-c">//Place here the code to be executed when the user wins</span>
             }
 
             <span class="pl-k">@Override</span>
             <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onLose</span>() {
-                <span class="pl-smi">Toast</span><span class="pl-k">.</span>makeText(getApplicationContext(), <span class="pl-s"><span class="pl-pds">"</span>You have lost.<span class="pl-pds">"</span></span>, <span class="pl-smi">Toast</span><span class="pl-c1"><span class="pl-k">.</span>LENGTH_LONG</span>)<span class="pl-k">.</span>show();
+                <span class="pl-c">//Place here the code to be executed when the user loses</span>
             }
         });</pre></div>
 
 <ul>
-<li>Make sure the game doesn't restart on turn (onConfigCHanged ...)</li>
+<li>Use a Toast to show a winning or losing text
+
+<ul>
+<li>Make sure the game doesn't restart on turn</li>
+</ul>
+</li>
+<li>Add the param <code>android:configChanges="orientation|screenSize"</code> to the GameActivity in the Manifest</li>
+<li>Override the function <code>onConfigurationChanged</code>
+
+<ul>
 <li>Add a TextView in the layout that shows the level</li>
+</ul>
+</li>
+<li>Use the function <code>game.getLevel()</code>
+</li>
 </ul>
 
       <footer class="site-footer">
