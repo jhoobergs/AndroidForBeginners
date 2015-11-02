@@ -178,34 +178,32 @@
 <a id="part-4-difficult" class="anchor" href="#part-4-difficult" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 4 (Difficult)</h4>
 
 <ul>
-<li>
-<p>Set the text shown when the player wins or loses</p>
+<li>Set the text shown when the player wins or loses
 
 <ul>
-<li>
-<p>Set the onWinListener</p>
+<li>Set the onWinListener
 
 <ul>
-<li>
-<p>Use the following code:
-    game.setOnWinListener(new onWinOrLoseInterface() {
-    <a href="https://github.com/Override" class="user-mention">@Override</a>
-    public void onWin() {
-        Toast.makeText(getApplicationContext(), "Next Level.", Toast.LENGTH_SHORT).show();
-    }</p>
-
-<pre><code>@Override
-public void onLose() {
-    Toast.makeText(getApplicationContext(), "You have lost.", Toast.LENGTH_LONG).show();
-}
-</code></pre>
-
-<p>});</p>
-</li>
+<li>Use the following code:</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+
+<div class="highlight highlight-source-java"><pre>            game<span class="pl-k">.</span>setOnWinListener(<span class="pl-k">new</span> onWinOrLoseInterface() {
+            <span class="pl-k">@Override</span>
+            <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onWin</span>() {
+                <span class="pl-smi">Toast</span><span class="pl-k">.</span>makeText(getApplicationContext(), <span class="pl-s"><span class="pl-pds">"</span>Next Level.<span class="pl-pds">"</span></span>, <span class="pl-smi">Toast</span><span class="pl-c1"><span class="pl-k">.</span>LENGTH_SHORT</span>)<span class="pl-k">.</span>show();
+            }
+
+            <span class="pl-k">@Override</span>
+            <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onLose</span>() {
+                <span class="pl-smi">Toast</span><span class="pl-k">.</span>makeText(getApplicationContext(), <span class="pl-s"><span class="pl-pds">"</span>You have lost.<span class="pl-pds">"</span></span>, <span class="pl-smi">Toast</span><span class="pl-c1"><span class="pl-k">.</span>LENGTH_LONG</span>)<span class="pl-k">.</span>show();
+            }
+        });</pre></div>
+
+<ul>
 <li>Make sure the game doesn't restart on turn (onConfigCHanged ...)</li>
 <li>Add a TextView in the layout that shows the level</li>
 </ul>
