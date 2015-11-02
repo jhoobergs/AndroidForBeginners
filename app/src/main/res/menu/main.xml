@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <item android:title="@string/first"
+        android:id="@+id/first"
+        app:showAsAction="never"/>
+    <item android:title="@string/second"
+        android:id="@+id/second"
+        app:showAsAction="ifRoom"/>
+    <item android:title="@string/third"
+        android:id="@+id/third"
+        android:icon="@android:drawable/btn_plus"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@color/button_material_light</item>
+    </style>
+    <style name="ButtonAnswer" parent="Button">
+        <item name="android:background">@android:color/holo_red_light</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="ButtonPoints" parent="Button">
+        <item name="android:background">@color/material_grey_100</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MathGame</string>
+    <string name="math_game">Math Game</string>
+    <string name="play">Play</string>
+    <string name="New">New</string>
+    <string name="newGame">New Game</string>
+    <string name="reminder_name">Fill in your name</string>
+    <string name="done">done</string>
+    <string name="help">Help</string>
+    <string name="to">to</string>
+    <string name="subject">subject</string>
+    <string name="message">message</string>
+    <string name="send">Send</string>
+    <string name="first">first</string>
+    <string name="second">second</string>
+    <string name="third">third</string>
+    <string name="example">Example</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+</resources>

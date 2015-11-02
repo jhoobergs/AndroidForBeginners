@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MathGame</string>
+    <string name="math_game">Math Game</string>
+    <string name="play">Speel</string>
+    <string name="New">Nieuw</string> <!-- new is a reserved key -->
+    <string name="new_game">Nieuw Spel</string>
+    <string name="reminder_name">Vul je naam in</string>
+    <string name="done">klaar</string>
+    <string name="help">help</string>
+</resources>
