@@ -151,11 +151,26 @@
 <li>Open the design-mode of activity_game.xml</li>
 <li>Click this button: <img src="images/landscape.png" alt="Image of LandscapeButton">
 </li>
-<li>Change the orientation of one of the LineairLayouts</li>
+<li>Change the orientation of the right LineairLayout</li>
 </ul>
 </li>
-<li>Add a menu with different layout for portait and landscape modus</li>
-<li>When clicked on 1 of the menu-items, the game should restart. (game.restart())</li>
+<li>Add a menu with different layout for portait and landscape modus
+
+<ul>
+<li>Create a new Menu resource file in the folder res/menu</li>
+<li>Load the layout from the function <code>onCreateOptionsMenu</code>
+</li>
+</ul>
+</li>
+<li>When clicked on 1 of the menu-items, the game should restart.
+
+<ul>
+<li>Override the function <code>onOptionsItemSelected</code>
+</li>
+<li>When clicked on the menu-item execute: <code>game.restart()</code>
+</li>
+</ul>
+</li>
 </ul>
 
 <h4>
