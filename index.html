@@ -21,7 +21,8 @@
     <section class="main-content">
       <h1>
 <a id="welcome-to-the-workshop-android-for-beginners" class="anchor" href="#welcome-to-the-workshop-android-for-beginners" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the workshop Android for beginners</h1>
-
+<h2  style="color:red">UPDATE: Solution now online. Redownload the zip file or pull the new commits.</h2>
+<h3>When you have a question, send an email to jesse.hoobergs@quivr.be</h3>
 <h3>
 <a id="what-do-you-need-for-this-workshop-" class="anchor" href="#what-do-you-need-for-this-workshop-" aria-hidden="true"><span class="octicon octicon-link"></span></a>What do you need for this workshop ?</h3>
 
@@ -187,10 +188,7 @@
 <ul>
 <li>Use the following code:</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+
 
 <div class="highlight highlight-source-java"><pre>            game<span class="pl-k">.</span>setOnWinListener(<span class="pl-k">new</span> onWinOrLoseInterface() {
             <span class="pl-k">@Override</span>
@@ -203,22 +201,17 @@
                 <span class="pl-c">//User loses</span>
             }
         });</pre></div>
+</li>
+</ul>
 
 <ul>
+
 <li>Use a Toast to show a winning or losing text
-
-<ul>
-<li>Make sure the game doesn't restart on turn</li>
-</ul>
 </li>
-<li>Add the param <code>android:configChanges="orientation|screenSize"</code> to the GameActivity in the Manifest</li>
-<li>Override the function <code>onConfigurationChanged</code>
-
-<ul>
-<li>Add a TextView in the layout that shows the level</li>
 </ul>
+
 </li>
-<li>Use the function <code>game.getLevel()</code>
+<li>Use the function <code>game.getLevel() to show the reached level when the player loses. (getLevel() starts with 0, so you have to add 1)</code>
 </li>
 </ul>
 
