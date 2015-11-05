@@ -2,7 +2,7 @@
     package="be.jhoobergs.mathgame">
 
     <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+        android:icon="@mipmap/smiley" android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
             android:label="@string/math_game">
             <!-- The intent-filter below makes sure this activity is launched when launching the app -->
