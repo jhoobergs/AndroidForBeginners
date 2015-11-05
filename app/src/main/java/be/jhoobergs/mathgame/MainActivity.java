@@ -12,12 +12,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonExample;
+    private Button buttonGame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         buttonExample = (Button) findViewById(R.id.buttonExample);
+        buttonGame = (Button) findViewById(R.id.buttonGame);
         setOnButtonClickListeners();
     }
 
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        buttonGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonGame.setEnabled(false);
+                Intent intent = new Intent(getApplicationContext(),GameActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -37,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         buttonExample.setEnabled(true);
+        buttonGame.setEnabled(true);
     }
 
     @Override

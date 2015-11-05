@@ -10,4 +10,12 @@
         style="@style/Button"
         />
 
+    <Button
+        android:id="@+id/buttonGame"
+        android:text ="@string/game"
+        android:layout_margin="40dp"
+        android:layout_gravity="center"
+        style="@style/Button"
+        />
+
 </LinearLayout>

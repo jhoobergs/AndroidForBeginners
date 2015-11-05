@@ -20,5 +20,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity android:name=".GameActivity"
+            android:label="@string/game"
+            android:parentActivityName=".MainActivity"
+            >
+            <!-- For API versions lower than 16, we have to add this meta-data-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 </manifest>
